@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mars Image Resolution Enhancer</title>
+  <!-- Link to our stylesheet -->
+  <link rel="stylesheet" href="ui2style.css" />
+</head>
+<body>
+  <header>
+    <h1 font="Roboto">MARS IMAGE RESOLUTION ENHANCER</h1>
+    <p>Upload your low-resolution Mars images and watch them come to life in higher detail!</p>
+  </header>
+
+  <main>
+    <!-- Image Upload Section -->
+    <section id="upload-section">
+      <h2> Upload Low-Resolution Image</h2>
+      <input 
+        id="file-input" 
+        type="file" 
+        accept="image/*" 
+      />
+      <button id="upload-button">Enhance Resolution</button>
+      <p id="status-msg"></p>
+    </section>
+
+    <!-- Side-by-Side Comparison Section -->
+    <section id="comparison-section" style="display: none;">
+      <h2>2. Compare Input vs. Output</h2>
+      <div class="image-compare-container">
+        <div class="image-preview">
+          <h3>Low-Resolution Input</h3>
+          <img id="input-image" src="" alt="Input Low Res" />
+        </div>
+        <div class="image-preview">
+          <h3>Enhanced Output</h3>
+          <img id="output-image" src="" alt="Output High Res" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section id="metrics-section" style="display: none;">
+      <h2> Quality Metrics</h2>
+      <div id="metrics-container">
+        <div class="metric">
+          <span class="metric-label">PSNR:</span>
+          <span class="metric-value" id="psnr-value">-</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">SSIM:</span>
+          <span class="metric-value" id="ssim-value">-</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">MOS:</span>
+          <span class="metric-value" id="mos-value">-</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Link to our JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
