@@ -1,4 +1,4 @@
-# MARS Super Resolution
+# Mars Super Resolution
 
 A CNN-based approach for memory-efficient super-resolution on high-resolution images. This project placed 1st in the NEXUS (Inter-Branch ML Forge) Competition.
 
